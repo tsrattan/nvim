@@ -76,4 +76,8 @@ map('n', '<leader>ps', ':Lazy show<cr>', { desc = 'Show plugins' })
 map('n', '<leader>ph', ':Lazy help<cr>', { desc = 'Help' })
 map('n', '<leader>px', ':Lazy clear<cr>', { desc = 'Clear uninstalled plugins' })
 
+-- save
+map('n', '<C-s>', '<cmd> w <CR>',{ desc = 'save file' })
 
+-- Copy all
+map('n', '<C-c>', '<cmd> %y+ <CR>',{ desc = 'copy whole file' })
