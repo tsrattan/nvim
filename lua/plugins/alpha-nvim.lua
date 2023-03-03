@@ -44,7 +44,7 @@ dashboard.section.buttons.val = {
   dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
 	dashboard.button("n", "  File Explorer",":NvimTreeToggle <CR>"),
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-	dashboard.button("t", "  Update Plugins", ":Lazy update <CR>"),
+	dashboard.button("u", "U  Update Plugins", ":Lazy update <CR>"),
 	dashboard.button("c", "  Configuration", ":e $MYVIMRC <CR>"),
   dashboard.button("h", "  Neovim Check health", ":checkhealth<CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
