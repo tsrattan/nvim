@@ -32,11 +32,8 @@ map('i', '<c-l>', '<right>')
 map('i', '<c-j>', '<down>')
 map('i', '<c-k>', '<up>')
 
--- Relative number On Off
-map('n', '<Leader>rn', '<cmd>set invrelativenumber<CR>')
-
--- Line numbers
-map('n', '<Leader>nu', '<cmd>set invnumber<CR>')
+-- Toggle between numbers and Relative numbers
+map('n', '<F3>', ':set nu rnu!<CR>', {noremap = true, silent = true})
 
 -- Navigate buffers
 map("n", "<S-l>", ":bnext<CR>", opts)
@@ -78,3 +75,5 @@ map('n', '<leader>pu', ':Lazy update<cr>', { desc = 'Update plugins' })
 map('n', '<leader>ps', ':Lazy show<cr>', { desc = 'Show plugins' })
 map('n', '<leader>ph', ':Lazy help<cr>', { desc = 'Help' })
 map('n', '<leader>px', ':Lazy clear<cr>', { desc = 'Clear uninstalled plugins' })
+
+
