@@ -152,7 +152,7 @@ lazy.setup({
     end,
   },
 
-
+	{'folke/tokyonight.nvim'},
 
 
 
