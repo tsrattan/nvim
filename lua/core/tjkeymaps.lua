@@ -81,3 +81,6 @@ map('n', '<C-s>', '<cmd> w <CR>',{ desc = 'save file' })
 
 -- Copy all
 map('n', '<C-c>', '<cmd> %y+ <CR>',{ desc = 'copy whole file' })
+
+-- Gives excute permission to file(script)
+map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
