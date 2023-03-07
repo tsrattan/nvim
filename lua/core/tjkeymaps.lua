@@ -7,9 +7,6 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
--- Sudo saving with <leader> and w
---map('n', '<leader>W', ':silent w !sudo tee %<CR>')
-
 -- Disable s ans S insert mode
 map('n', 's', '<nop>')
 map('n', 'S', '<nop>')
@@ -84,3 +81,6 @@ map('n', '<C-c>', '<cmd> %y+ <CR>',{ desc = 'copy whole file' })
 
 -- Gives excute permission to file(script)
 map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- Sudo saving with <leader> and W
+map("n", "<leader>W", "<cmd>w !sudo tee %<CR>", { silent = true })
