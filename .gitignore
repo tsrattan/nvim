@@ -1,0 +1,7 @@
+.dotfiles
+*.log
+*.lock
+*.tmp
+.DS_Store
+Thumbs.db
+lazy-lock.json
